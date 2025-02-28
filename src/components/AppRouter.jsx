@@ -7,9 +7,10 @@ import PostIdPage from "../pages/PostIdPage";
 const AppRouter = () => {
     return (
         <Routes>
-            <Route path={"/about"} element={<About/>}/>
+            <Route path={"/"} element={<About/>}/>
             <Route exact path={"/posts"} element={<Posts/>}/>
             <Route exact path={"/posts/:id"} element={<PostIdPage/>}/>
+            {/*<Route path={"*"} element={<Error/>}/>*/}
         </Routes>
     );
 };

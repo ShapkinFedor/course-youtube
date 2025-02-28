@@ -14,7 +14,7 @@ const PostIdPage = () => {
     useEffect(()=>{
         fetchPostById(params.id)
 
-    },)
+    },[])
     return (
         <div>
             <h1>Вы открыли страницу поста с ID={params.id}</h1>
